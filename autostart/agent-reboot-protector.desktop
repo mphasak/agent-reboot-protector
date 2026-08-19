@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Agent Reboot Protector
+Comment=Restore terminal agent sessions after a reboot, then keep snapshotting
+Exec=@ARP@ login
+X-GNOME-Autostart-enabled=true
+X-GNOME-Autostart-Delay=8
+X-KDE-autostart-after=panel
+Terminal=false
