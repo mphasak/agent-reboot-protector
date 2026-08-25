@@ -1,0 +1,13 @@
+#!/usr/bin/env python3
+"""Entry point that works when symlinked into ~/.local/bin."""
+import os
+import sys
+
+here = os.path.dirname(os.path.realpath(__file__))
+repo = os.path.dirname(here)
+if repo not in sys.path:
+    sys.path.insert(0, repo)
+
+from arp.cli import main  # noqa: E402
+
+sys.exit(main())
